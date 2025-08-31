@@ -1,0 +1,11 @@
+build/
+log/
+install/
+.cache/
+.vscode/
+
+config/merged_bag/*
+
+*.engine
+
+ros2bags/
