@@ -37,10 +37,15 @@
 **v2.0**
 - 进入2025赛季，更新README，适配新赛季
 
+**v2.1**
+- 添加技术报告链接，提供rosbag数据。
+
 # 项目介绍
 
 
 本项目通过激光雷达和单目相机的目标检测，进行传感器后融合，实现了传感器之间的完全解耦合，避免了联合标定带来的误差，同时开发难度不随传感器数量增加而增加。  
+
+东北大学RM2025雷达技术报告 [https://bbs.robomaster.com/article/803954](https://bbs.robomaster.com/article/803954)
 
 
 **如果你没有激光雷达，也可以直接使用本项目的单目相机方案 (在RM2023的0.6m误差规则下取得了最高91%的准确率，荣获2023年雷达MVP)**
@@ -186,7 +191,8 @@ ros2 launch dynamic_cloud lidar.launch.py #启动激光雷达识别
 ros2 run debug_map debug_map #启动地图可视化
 ros2 launch livox_ros2_driver livox_lidar_launch.py #启动Livox驱动
 ```
-
+测试ros2bag下载
+[谷歌网盘](https://drive.google.com/file/d/1hBJER_jnCrIQ21ojHj7HG4pWShSiCSPD/view?usp=sharing)
 
 修改tdt_vision/launch对应的launch文件中的rosbag路径即可进程内播放对应的rosbag
 ### 相机外参标定
